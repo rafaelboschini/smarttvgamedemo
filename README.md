@@ -5,8 +5,7 @@
 Welcome to our Proof of Concept (POC) project aimed at testing the viability of creating a fun app for Smart TVs. This project is a parody of the classic Duck Hunt game for NES but with a twist – it features the faces of my kids! The app supports the Magic Control, allowing children to aim and hit targets. No engines were used; we relied solely on vanilla JavaScript.
 
 ## 📸 Snapshots 
-[![Demo Video]([https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg](https://github.com/rafaelboschini/smarttvgamedemo/blob/main/assets/screenshots/demo.png?raw=true))](https://www.youtube.com/watch?v=FYAAGnYKefk&ab_channel=RafaelBoschini)
-
+[![Demo Video](https://github.com/rafaelboschini/smarttvgamedemo/blob/main/assets/screenshots/demo.png?raw=true)](https://www.youtube.com/watch?v=FYAAGnYKefk&ab_channel=RafaelBoschini)
 
 ## 🚀 Getting Started
 
