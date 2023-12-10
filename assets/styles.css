@@ -1,0 +1,131 @@
+:root {
+    --background-image: url("images/retro-games.jpg");
+    --text-color: #ffffff;
+    --box-width: 200px;
+    --box-height: 180px;
+    --fade-animation-duration: 2s;
+    --fly-animation-duration: 6.5s;
+    --dog-animation-duration: 20s;
+    --progress-bar-width: 80%;
+    --progress-bar-height: 20px;
+    --progress-color: #00ff00;
+    --progress-transition-duration: 1s;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: var(--background-image);
+    background-size: cover;
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.box {
+    position: absolute;
+    width: var(--box-width);
+    height: var(--box-height);
+}
+
+.box.hit {
+    animation: fadein var(--fade-animation-duration) linear;
+    opacity: 0;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 100;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.flying-div {
+    position: absolute;
+    left: 0;
+    height: calc(100% - 20px);
+    animation: fly var(--fly-animation-duration) linear infinite;
+}
+
+@keyframes fly {
+    from {
+        left: 0;
+        bottom: 0;
+        opacity: 1;
+    }
+
+    to {
+        left: 110%;
+        bottom: 100%;
+        opacity: 0;
+    }
+}
+
+.dog {
+    position: absolute;
+    left: 50%;
+    width: 220px;
+    bottom: -20px;
+    animation: dogAnimation var(--dog-animation-duration) linear 3s infinite;
+}
+
+@keyframes dogAnimation {
+    0% {
+        bottom: -190px;
+    }
+
+    44% {
+        bottom: 0px;
+    }
+
+    55% {
+        bottom: 0px;
+    }
+
+    66% {
+        bottom: 0px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+.score-number {
+    width: 20px;
+}
+
+.splashscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.progress-bar {
+    width: var(--progress-bar-width);
+    height: var(--progress-bar-height);
+    background-color: var(--text-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background-color: var(--progress-color);
+    transition: width var(--progress-transition-duration) linear;
+}

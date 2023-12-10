@@ -1,0 +1,10 @@
+{
+  "id": "smarttvgamedemo",
+  "version": "0.0.1",
+  "vendor": "Rafael Boschini",
+  "type": "web",
+  "main": "index.html",
+  "title": "Smart TV Game Demo",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png"
+}
